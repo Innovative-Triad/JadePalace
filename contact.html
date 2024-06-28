@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="contact_style.css">
+    <link rel="stylesheet" href="footerstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/192b98bb0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="LandingPage.html" class="logo"><img src="images/JP logo.png"></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="aboutUs.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            
+            <a href="reservations.html">Reservations</a>
+            <a href="private.html">Private Events</a>
+           
+            <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile No.">
+                <input type="text" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer">
+        <div class="form-section">
+            <div class="news">
+                <label for="email" class="form-label grenze-light">Subscribe to Our Newsletter</label>
+                <div class="form">
+                    <input type="email" class="email" id="email" placeholder="Email" required>
+                    <button type="submit" class="btn btn-footer">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="socmed">
+                <ul>
+                    <li class="insta"><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</li></a>
+                    <li class="facebook"><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</li></a>
+                    <li class="X"><a href="#"><i class="fa-brands fa-x-twitter"></i>Twitter/X</li></a>
+                </ul>
+            </div>
+            <div class="address">
+                <p>
+                    500 Terry Francine Street,<br>
+                    San Francisco<br>
+                    123-456-7890<br>
+                    info@mysite.com
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Richa, Sapthami and Shravani | All Rights Reserved.</p>
+            </div>
+            <div class="top">
+                <a href="#"><i class="fa-solid fa-up-long"></i></a>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!--Java script input-->
+    <script src="contact.js"></script>
+
+</body>

@@ -1,0 +1,526 @@
+
+.body{
+    background-color: #8b0000;
+    padding-top: 10rem;
+    
+}
+
+.priv-container {
+    align-items: center;
+    padding: 5rem 5%;
+    max-width: 1000px; /* Adjust the maximum width as per your design */
+    margin: 0 auto; /* Center the container horizontally */
+    min-height: 100vh;
+}
+.display-3 {
+    text-align: center;
+    font-family: 'Grenze';
+    color: #ffd700;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+    color: #e0e0e0;
+    font-size: 1.6rem;
+    text-align: left;
+}
+input.form-control,
+select.form-select,
+textarea.form-control {
+    background-color: #ffd700;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--rich-red);
+    background: var(--golden);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+
+.form-control::placeholder,
+textarea::placeholder {
+    color: #8b0000;
+    opacity: 1;
+}
+
+
+
+button.custom-btn {
+    background: #ffd700;
+    border-radius: 2rem;
+    color: #8b0000;
+    font-family: 'Lato', sans-serif;
+}
+button.custom-btn:hover {
+    background: #ffd700;
+    box-shadow: 0 0 1rem #ffd700;
+    transform: scale(1.05);
+    color: #8b0000;
+}
+
+button.custom-btn:active {
+    background: #ffd700;
+    color: #e0e0e0;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color:  rgba(0, 0, 0, .2);
+    
+}
+.priv-container form{
+    
+        max-width: 80rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 4rem;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.navbar a:hover ,
+.navbar a.active{
+    color: var(--golden);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--golden);
+    display: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--golden);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--green);
+    font-size: 1.6rem;
+    color: var(--rich-red);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.header img{
+    width: 5vw;
+    border-radius: 50%;
+    border: 2px solid var(--golden);
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--golden);
+    margin-top: 5rem;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bgcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    opacity: 70%;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover ,
+.navbar a.active{
+    color: var(--golden);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--golden);
+    display: none;
+}
+
+img{
+    width: 5vw;
+    border-radius: 50%;
+    border: 2px solid var(--golden);
+}
+
+:root {
+    --rich-red: #8b0000;
+    --green: #013220;
+    --golden: #ffd700;
+    --bgcolor: #121212;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--rich-red);
+}
+
+@media (max-width: 768px) {
+    .priv-container {
+        padding: 3rem 3%;
+    }
+
+    .line2 .col,
+    .line3 .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .line2,
+    .line3 {
+        flex-direction: column;
+    }
+
+    .line2 .col,
+    .line3 .col,
+    .line3 textarea {
+        margin-bottom: 1rem;
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #12121292; /* Ensure it matches your overall design */
+    color: #e0e0e0;
+    font-family: "Lato",Arial, sans-serif;
+    flex-wrap: wrap; /* Allow content to wrap */
+    margin-top: auto;
+}
+
+.form-section {
+    flex: 1;
+}
+
+.contact-section {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.news {
+    padding-left: 2rem;
+}
+
+.form-label {
+    color: #e0e0e0;
+}
+
+.grenze-light {
+    font-family: "Grenze", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.form {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+button.btn-footer{
+    background: #8b0000;
+    border-radius: 1.6rem;
+    color:#ffd700;
+}
+
+.email {
+    border-radius: 5px;
+    margin-right: 10px; /* Add some space between input and button */
+}
+
+.socmed ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socmed li {
+    display: inline-block;
+    margin-right: 2rem;
+    font-family: "Grenze", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: #e0e0e0;
+}
+
+.socmed i {
+    margin-right: 0.5rem;
+}
+
+.address {
+    color: #e0e0e0;
+    font-family: "Grenze", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+   
+}
+
+.footer-text p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-align: center;
+    
+}
+
+.top{
+    background-color: #ffd700;
+    
+    font-size:2rem;
+    border-radius: 2.6rem;
+    padding: 1rem;
+    width:2.4rem;
+    height:2.4rem;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    transition: .5s ease;
+    
+}
+.top:hover {
+    box-shadow: 0 0 1rem #ffd700;
+}
+.top a i {
+    font-size: 2rem;
+    color:#8b0000;
+}
+
+.footer-bottom {
+    width: 100%; /* Ensure it takes the full width below the other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #12121292;
+    margin-top: 2rem; /* Add some space above the footer bottom */
+}
+button.btn-footer:hover{
+    background:#8b0000;
+    box-shadow: 0 0 0.5rem #ffd700;
+    transform:scale(1.05);
+    color:#ffd700;
+}
+button.btn-footer:active{
+    background:#ffd700;
+}
+.socmed ul li a{
+    color:#e0e0e0;
+    text-decoration: none;
+}
+
+
+/* Breakpoints */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .skills{
+        padding-bottom: 7rem;
+    }
+
+    .education{
+        padding-bottom: 7rem;
+    }
+
+}
+@media (max-width: 576px) {
+    .priv-container {
+        padding: 2rem 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+
+    .home-img img{
+        width: 50vw;
+        margin-top: 4rem;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .about-img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .skills h2{
+        margin-bottom: 3rem;
+    }
+
+    .education h2{
+        margin-bottom: 3rem;
+    }
+
+    .skill-container img{
+        width: 150px;
+        height: 150px
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input{
+        width: 100%;
+    }
+
+    .skill-container img{
+        width: 100px;
+        height: 100px
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-section, .contact-section, .footer-bottom {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact-section {
+        padding-left: 0;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .email {
+        margin-right: 0;
+        margin-bottom: 1rem; /* Add space below input */
+        width: 100%; /* Make the input take full width */
+    }
+
+    .socmed ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .socmed li {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer-text {
+        margin-bottom: 1rem; /* Add space below footer text */
+    }
+}

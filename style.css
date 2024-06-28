@@ -1,0 +1,560 @@
+html, body {
+    background-color: var(--rich-red);
+    color: #e0e0e0; /* Ensuring text color is readable on dark background */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --rich-red: #8b0000;
+    --green: #013220;
+    --golden: #ffd700;
+    --bgcolor: #12121292;
+}
+
+/*header*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bgcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.navbar a{
+    font-size: 2rem;
+    color: white;
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover ,
+.navbar a.active{
+    color: var(--golden);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--golden);
+    display: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--golden);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--green);
+    font-size: 1.6rem;
+    color: var(--rich-red);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.header img{
+    width: 5vw;
+    border-radius: 50%;
+    border: 2px solid var(--golden);
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--golden);
+    margin-top: 5rem;
+    
+}
+
+.header img{
+    width: 5vw;
+    border-radius: 50%;
+    border: 2px solid var(--golden);
+}
+
+
+
+
+/*home page*/
+.home_page {
+    background-image: url(images/chinese\ dish\ 1.jpg);
+    height: 100vh;
+    background-size: cover;
+    width: 100vw;
+    background-position: 100%;
+    background-color: transparent;
+}
+
+.transparent {
+    background-color: #12121292;
+    width: 30%;
+}
+
+.Welcome {
+    font-size: xx-large;
+    font-family: 'grenze-light';
+}
+.text-white{
+    color: #e0e0e0;
+}
+
+
+
+
+/* Common*/
+.menu, .reservations, .review {
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading2{
+    font-family: 'grenze-light';
+    font-size: 60px;
+    color: var(--golden);
+    text-align: center;
+}
+
+
+
+
+/* Menu part*/
+.menup{
+    background-color: var(--green);
+}
+.rightText {
+    font-size: x-large;
+    width: 50%;
+    font-family: 'Lato';
+    margin-top: 80px;
+    color: #e0e0e0;
+    margin-right: 40px;
+    text-align: center;
+}
+.row1{
+    align-items: center;
+}
+#mbtn{
+    font-size: 20px;
+    color: var(--golden);
+    background-color: var(--rich-red);
+    border-radius: 50%;
+    border-color: var(--golden);
+}
+
+
+
+
+
+/* Reservations part*/
+.reservations{
+    background-color: var(--rich-red);
+}
+.row2{
+    align-items:center;
+}
+#rbtn{
+    font-size: 20px;
+    background-color: var(--green);
+    color: #ffd700;
+    border-radius: 50%;
+    border-color: #ffd700;
+    
+}
+
+.reservations .rightText{
+    font-size: xxx-large;
+    width: 50%;
+    font-family: Lato;
+    margin-top: 80px;
+    color: #e0e0e0;
+    margin-left: 40px;
+}
+
+.reservations p{
+    font-size: xx-large;
+    margin-left: 50px;
+    margin: 50px;
+    text-align: center;
+}
+
+
+
+
+
+/*Review part*/
+.review{
+    background-color: var(--green);
+}
+
+.review .heading{
+    text-align: center;
+}
+.dotted-border {
+    border: 2px dotted #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    margin-right: 0px;  
+}
+
+.review{
+    padding-bottom: 900px;
+}
+
+
+
+
+
+/*images*/
+.leftImg img, .rightImg img {
+    height: 500px;
+    width: 600px;
+    margin-top: 80px;
+    border-radius: 0px;
+}
+
+.leftImg img {
+    margin-left: 80px;
+    border: var(--rich-red);
+}
+
+.rightImg img {
+    margin-right: 80px;
+    border: var(--golden);
+}
+
+.image-container_crew img {
+    max-width: 100%;
+    height: 300px;
+    flex: 1; /* Ensures all images take up equal width */
+    border: 2px solid black;
+    border-radius: 0px; /* Optional: Adds a border around images */
+    padding-bottom: 10px;
+}
+
+img {
+    width: 5vw;
+    border-radius: 50%;
+    border: 2px solid var(--golden);
+}
+
+
+
+
+/*about page*/
+.ourCrew {
+    color: #e0e0e0;
+    background-color: #12121292;
+    font-size: xxx-large;
+    text-align: center;
+    font-family: 'grenze';
+}
+
+.section6{
+    background-color: #12121292;
+}
+
+.section6 img{
+    border: #e0e0e0;
+    border-width: 1rem;
+    height: 500px;
+}
+
+.container2 {
+    background-color: #12121292;
+}
+.container2 img{
+    height: 300px;
+}
+
+.image-container_crew {
+    display: flex;
+    gap: 50px; /* Adjust the gap between images as needed */
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-left: 75px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.custom-font {
+    font-family: 'Great Vibes';
+    font-size: 'xxx-large';
+}
+
+.JP {
+    font-family: 'Great Vibes';
+    font-size: 150px;
+}
+
+.Au {
+    font-family: lato;
+    font-size: 120px;
+    color: black;
+    margin-top: 200px;
+}
+
+.about_pageimg {
+    background-image: url(images/Res3.jpg);
+    height: 70vh;
+    background-size: cover;
+    width: 100vw;
+    background-position: 100%;
+}
+
+.section5{
+    background-color: #12121292;
+    font-family: lato;
+    font-size: x-large;
+}
+
+.section5 h2{
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ourCrew{
+    margin-top: 50px;
+}
+
+/* media queries */
+@media screen and (max-width:1200px ) {
+   
+    .news{
+        margin-top: 600px;
+       }
+       .contact-section{
+        margin-top: 600px;
+       }
+       .h2{
+        font-size:x-small;
+       }
+}
+@media screen and (max-width:1200px ) {
+   
+    h2 text-white m-t-20{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:975px ) {
+    .leftImg img, .rightImg img{
+        width: 80%;
+        height: 80%;
+    }
+    .news{
+        margin-top: 600px;
+       }
+       .contact-section{
+        margin-top: 600px;
+       }
+}
+  
+/* tablets */
+@media screen and (max-width:768px ) {
+  .menup{
+    justify-content: left;
+  }
+    .leftImg img{
+    width: 60%;
+    height: 60%;
+   }
+   .rightImg img{
+    height: 300px;
+   }
+   .rightText{
+    width: 50%;
+    font-size: large;
+    height: 20%;
+   }
+   .heading{
+    font-size: 60%;
+   }
+   .xx-large{
+    font-size: large;
+   }
+   .row1{
+    height: 500px;
+   }
+   .news{
+    margin-top: 600px;
+   }
+   .contact-section{
+    margin-top: 600px;
+   }
+   .reservations{
+    height: 800px;
+   }
+   
+}
+@media screen and (max-width: 680px ) {
+    
+      .rightImg img{
+        height: 40%;
+        width: 90%;
+      }
+      .image-container_crew {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container_crew img{
+        width: 80%;
+    }
+      }
+ 
+
+/* mobiles */
+@media screen and (max-width: 480px ) {
+    .leftImg img{
+        width: 70%;
+        height: 80%;
+       }
+       .rightText {
+        margin-right: 10px;
+       }
+       .menup{
+        height: 650px;
+       }
+       #rbtn{
+        margin-left: 20px;
+       }
+}
+
+
+
+/* media queries */
+@media screen and (max-width:1200px ) {
+   
+    .news{
+        margin-top: 600px;
+       }
+       .contact-section{
+        margin-top: 600px;
+       }
+       .h2{
+        font-size:x-small;
+       }
+}
+@media screen and (max-width:1020px ) {
+   
+    
+       .h2{
+        font-size: x-small;
+       }
+}
+
+@media screen and (max-width:975px ) {
+    .leftImg img, .rightImg img{
+        width: 80%;
+        height: 80%;
+    }
+    .news{
+        margin-top: 600px;
+       }
+       .contact-section{
+        margin-top: 600px;
+       }
+}
+  
+/* tablets */
+@media screen and (max-width:768px ) {
+  .menup{
+    justify-content: left;
+  }
+    .leftImg img{
+    width: 60%;
+    height: 60%;
+   }
+   .rightImg img{
+    height: 300px;
+   }
+   .rightText{
+    width: 50%;
+    font-size: large;
+    height: 20%;
+   }
+   .heading{
+    font-size: 60%;
+   }
+   .xx-large{
+    font-size: large;
+   }
+   .row1{
+    height: 500px;
+   }
+   .news{
+    margin-top: 600px;
+   }
+   .contact-section{
+    margin-top: 600px;
+   }
+   .reservations{
+    height: 800px;
+   }
+
+}
+@media screen and (max-width: 680px ) {
+    
+      .rightImg img{
+        height: 40%;
+        width: 90%;
+      }
+}
+
+/* mobiles */
+@media screen and (max-width: 480px ) {
+    .leftImg img{
+        width: 70%;
+        height: 80%;
+       }
+       .rightText {
+        margin-right: 10px;
+       }
+       .menup{
+        height: 650px;
+       }
+       #rbtn{
+        margin-left: 20px;
+       }
+}
+
+
+
+
+
+
+
+
+
+
+
